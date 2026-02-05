@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section#promot {
+            background-color: rgb(255, 255, 0);
+            padding: 20px;
+        }
+
+        section#promot>p {
+            text-align: center;
+        }
+
+        header {
+            padding: 100px;
+            background-color: rgb(26, 188, 156);
+        }
+
+        header>h1,
+        header>p {
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        nav>ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main>aside {
+            flex: 30%;
+            background-color: rgb(241, 241, 241);
+        }
+
+        main>article {
+            flex: 70%;
+        }
+
+        footer {
+            background-color: rgb(221, 221, 221);
+            padding: 50px;
+        }
+
+        footer>h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="promot">
+        <p>Resize the browser window to see the responsive effect.</p>
+    </section>
+    <header>
+        <h1>My website</h1>
+        <p>With a flexible layout.
+
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <aside>
+            <h2>About Me</h2>
+            <h6>Photo of me:</h6>
+            <div class="image">image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="image">image</div>
+            <div class="image">image</div>
+            <div class="image">image</div>
+        </aside>
+        <article>article</article>
+
+    </main>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>
