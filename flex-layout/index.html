@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* font-size: 16px; */
         }
 
         section#promot {
@@ -29,6 +30,7 @@
         header>h1,
         header>p {
             text-align: center;
+            color: rgb(245, 245, 245);
         }
 
         nav {
@@ -39,6 +41,8 @@
         nav>ul {
             display: flex;
             list-style: none;
+            /* flex-direction: row; */
+            justify-content: center;
         }
 
         nav a {
@@ -46,6 +50,11 @@
             text-decoration: none;
             display: inline-block;
             padding: 10px 20px;
+            transition: background-color .5s, color 1s ;
+        }
+        nav a:hover{
+            background-color: rgb(241,241,241);
+            color: rgb(0,0,0);
         }
 
         main {
@@ -55,12 +64,38 @@
         main>aside {
             flex: 30%;
             background-color: rgb(241, 241, 241);
+            padding: 20px;
         }
 
         main>article {
             flex: 70%;
+            padding: 20px;
         }
-
+        .image{
+            background-color: rgb(170,170,170);
+            width: 100%;
+            opacity: .5;
+            transition: opacity .5s;
+        }
+        .image:hover{
+            opacity: 1;
+        }
+        .tombnail{
+            padding: 10px;
+        }
+        .bigpic{
+           padding: 65px  
+        }
+        .smallpic{
+            padding: 30px;
+            margin-bottom: 10px;
+        }
+        .mediumpic{
+            padding: 50px ;
+        }
+        .titlewhitespace, .textwhitespace{
+            margin: 20px 0px;
+        }
         footer {
             background-color: rgb(221, 221, 221);
             padding: 50px;
@@ -69,45 +104,75 @@
         footer>h2 {
             text-align: center;
         }
+        @media(max-width:600px){
+            nav>ul{
+                display: flex;
+                flex-direction: column;
+            }
+            nav a{
+                width: 100%;
+                text-align: center;
+            }
+            main{
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section id="promot">
-        <p>Resize the browser window to see the responsive effect.</p>
+        <p class="textwhitespace">Resize the browser window to see the responsive effect.</p>
     </section>
     <header>
-        <h1>My website</h1>
-        <p>With a flexible layout.
+        <h1 class="titlewhitespace">My website</h1>
+        <p class="textwhitespace">With a flexible layout.
 
         </p>
     </header>
     <nav>
         <ul>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
         </ul>
 
     </nav>
     <main>
         <aside>
-            <h2>About Me</h2>
-            <h6>Photo of me:</h6>
-            <div class="image">image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="image">image</div>
-            <div class="image">image</div>
-            <div class="image">image</div>
+            <h2 class="titlewhitespace">About Me</h2>
+            <h6 class="titlewhitespace">Photo of me:</h6>
+            <div class="image bigpic">image</div>
+            <p class="textwhitespace">Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3 class="titlewhitespace">More Text</h3>
+            <p class="textwhitespace">Lorem ipsum dolor sit ame.</p>
+            <div class="image smallpic">image</div>
+            <div class="image smallpic">image</div>
+            <div class="image smallpic">image</div>
         </aside>
-        <article>article</article>
+        <article>
+            <h2  class="titlewhitespace">TITLE HEADING</h2>
+            <h6 class="titlewhitespace">Title description, Oct 7, 2025</h6>
+            <div class="image bigpic">image</div>
+            <p class="textwhitespace">Some text..</p>
+            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+            <h2  class="titlewhitespace">TITLE HEADING</h2>
+            <h6 class="titlewhitespace">Title description, Sep 2, 2025</h6>
+            <div class="image bigpic">image</div>
+
+            <p class="textwhitespace">Some text..</p>
+            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+
+        </article>
 
     </main>
     <footer>
-        <h2>Footer</h2>
+        <h2  class="titlewhitespace">Footer</h2>
     </footer>
 </body>
 
