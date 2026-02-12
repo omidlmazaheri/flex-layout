@@ -1,123 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            /* font-size: 16px; */
-        }
+    <title>سایت شخصی من</title>
+    <link rel="shortcut icon" href="images/fluidicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/initialize.css">
+    <link rel="stylesheet" href="node_modules\vazirmatn\misc\Farsi-Digits\Vazirmatn-FD-font-face.css">
+    <link rel="stylesheet" href="style/style.css">
 
-        section#promot {
-            background-color: rgb(255, 255, 0);
-            padding: 20px;
-        }
-
-        section#promot>p {
-            text-align: center;
-        }
-
-        header {
-            padding: 100px;
-            background-color: rgb(26, 188, 156);
-        }
-
-        header>h1,
-        header>p {
-            text-align: center;
-            color: rgb(245, 245, 245);
-        }
-
-        nav {
-            background-color: rgb(0, 0, 0);
-
-        }
-
-        nav>ul {
-            display: flex;
-            list-style: none;
-            /* flex-direction: row; */
-            justify-content: center;
-        }
-
-        nav a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            display: inline-block;
-            padding: 10px 20px;
-            transition: background-color .5s, color 1s ;
-        }
-        nav a:hover{
-            background-color: rgb(241,241,241);
-            color: rgb(0,0,0);
-        }
-
-        main {
-            display: flex;
-        }
-
-        main>aside {
-            flex: 30%;
-            background-color: rgb(241, 241, 241);
-            padding: 20px;
-        }
-
-        main>article {
-            flex: 70%;
-            padding: 20px;
-        }
-        .image{
-            background-color: rgb(170,170,170);
-            width: 100%;
-            opacity: .5;
-            transition: opacity .5s;
-        }
-        .image:hover{
-            opacity: 1;
-        }
-        .tombnail{
-            padding: 10px;
-        }
-        .bigpic{
-           padding: 65px  
-        }
-        .smallpic{
-            padding: 30px;
-            margin-bottom: 10px;
-        }
-        .mediumpic{
-            padding: 50px ;
-        }
-        .titlewhitespace, .textwhitespace{
-            margin: 20px 0px;
-        }
-        footer {
-            background-color: rgb(221, 221, 221);
-            padding: 50px;
-        }
-
-        footer>h2 {
-            text-align: center;
-        }
-        @media(max-width:600px){
-            nav>ul{
-                display: flex;
-                flex-direction: column;
-            }
-            nav a{
-                width: 100%;
-                text-align: center;
-            }
-            main{
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -125,17 +17,19 @@
         <p class="textwhitespace">Resize the browser window to see the responsive effect.</p>
     </section>
     <header>
-        <h1 class="titlewhitespace">My website</h1>
-        <p class="textwhitespace">With a flexible layout.
+        <section>
+            <h1 class="titlewhitespace">وب سایت شخصیمن</h1>
+            <p class="textwhitespace">لورم ایپسوم متن </p>
+            <a href="#">جزییات بیشتر</a>
+        </section>
 
-        </p>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
+            <li><a href="#">لینک</a></li>
         </ul>
 
     </nav>
@@ -152,19 +46,21 @@
             <div class="image smallpic">image</div>
         </aside>
         <article>
-            <h2  class="titlewhitespace">TITLE HEADING</h2>
+            <h2 class="titlewhitespace">TITLE HEADING</h2>
             <h6 class="titlewhitespace">Title description, Oct 7, 2025</h6>
             <div class="image bigpic">image</div>
             <p class="textwhitespace">Some text..</p>
-            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco.</p>
-            <h2  class="titlewhitespace">TITLE HEADING</h2>
+            <h2 class="titlewhitespace">TITLE HEADING</h2>
             <h6 class="titlewhitespace">Title description, Sep 2, 2025</h6>
             <div class="image bigpic">image</div>
 
             <p class="textwhitespace">Some text..</p>
-            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            <p class="textwhitespace">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco.</p>
 
@@ -172,7 +68,7 @@
 
     </main>
     <footer>
-        <h2  class="titlewhitespace">Footer</h2>
+        <h2 class="titlewhitespace">کپی رایت 2025</h2>
     </footer>
 </body>
 
